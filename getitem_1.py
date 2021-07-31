@@ -1,7 +1,12 @@
-my_list = ['a', 'b', 'c', 'd']
+ages = [5, 12, 17, 18, 24, 32]
 
-print(my_list[0])
+def myfun(x):
+    if x < 18:
+        return False
+    else:
+        return True
 
-print(my_list)
+adults = filter(myfun, ages)
 
-print(my_list.__getitem__(2))
+for x in adults:
+    print(x)
